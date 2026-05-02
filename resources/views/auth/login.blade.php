@@ -32,15 +32,15 @@
                 @csrf
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-2">Email Admin</label>
-                    <input type="email" name="email" required 
-                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border border-transparent focus:border-[#7E8959] focus:bg-white focus:ring-4 focus:ring-[#7E8959]/10 outline-none transition-all"
+                    <input type="email" name="email" autocomplete="off" required 
+                        class="w-full px-5 py-4 rounded-2xl bg-gray-200 border border-transparent focus:border-[#7E8959] focus:bg-white focus:ring-4 focus:ring-[#7E8959]/10 outline-none transition-all"
                         placeholder="contoh@jamusaripah.com">
                 </div>
 
                 <div>
                     <label class="block text-sm font-bold text-gray-700 mb-2">Password</label>
-                    <input type="password" name="password" required 
-                        class="w-full px-5 py-4 rounded-2xl bg-gray-50 border border-transparent focus:border-[#7E8959] focus:bg-white focus:ring-4 focus:ring-[#7E8959]/10 outline-none transition-all"
+                    <input type="password" name="password" autocomplete="new-password" required 
+                        class="w-full px-5 py-4 rounded-2xl bg-gray-200 border border-transparent focus:border-[#7E8959] focus:bg-white focus:ring-4 focus:ring-[#7E8959]/10 outline-none transition-all"
                         placeholder="••••••••">
                 </div>
 
@@ -52,13 +52,16 @@
                     <a href="#" class="text-sm text-[#7E8959] font-semibold hover:underline">Lupa Password?</a>
                 </div>
 
-                <button type="submit" 
-                    class="w-full bg-[#7E8959] text-white font-bold py-4 rounded-2xl shadow-lg shadow-[#7E8959]/30 hover:-translate-y-1 hover:bg-[#6B754D] transition-all duration-300">
-                    Masuk Dashboard
-                </button>
-            </form>
+              <button type="submit" 
+                class="w-full bg-[#7E8959] text-white font-bold py-4 rounded-2xl shadow-lg shadow-[#7E8959]/30 hover:-translate-y-1 hover:bg-[#6B754D] transition-all duration-300">
+                Masuk Dashboard
+            </button>
 
-            <div class="mt-8 text-center">
+            <p class="mt-6 text-center text-sm text-gray-400">
+                Belum punya akun admin? <a href="{{ route('register') }}" class="text-[#7E8959] font-bold hover:underline">Daftar Akun</a>
+            </p>
+
+            <div class="mt-8 text-center pt-6 border-t border-gray-50">
                 <a href="/" class="text-gray-400 text-sm hover:text-[#7E8959] transition-colors flex items-center justify-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -71,7 +74,7 @@
         <p class="text-center mt-10 text-gray-400 text-sm italic">
             "Sehat Alami dengan Resep Autentik"
         </p>
-    </div>
 
+    </div>
 </body>
 </html>

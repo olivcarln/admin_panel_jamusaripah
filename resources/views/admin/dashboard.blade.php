@@ -27,7 +27,6 @@
 
     <!-- Main Grid -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        
         <!-- Form Tambah Voucher -->
         <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
             <h2 class="text-xl font-bold mb-4 flex items-center">
